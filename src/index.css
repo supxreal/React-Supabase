@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui" {
+  /* themes: light --default, dark --prefersdark; */
+  themes: light --default, dark;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.001 106.423);
+  --color-base-200: oklch(97% 0.001 106.424);
+  --color-base-300: oklch(87% 0 0);
+  --color-base-content: oklch(27% 0.033 256.848);
+  --color-primary: oklch(69% 0.17 162.48);
+  --color-primary-content: oklch(96% 0.018 272.314);
+  --color-secondary: oklch(60% 0.118 184.704);
+  --color-secondary-content: oklch(98% 0.026 102.212);
+  --color-accent: oklch(58% 0.158 241.966);
+  --color-accent-content: oklch(97% 0.013 236.62);
+  --color-neutral: oklch(92% 0.004 286.32);
+  --color-neutral-content: oklch(27% 0.033 256.848);
+  --color-info: oklch(70% 0.165 254.624);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(87% 0.169 91.605);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(20.4% 0 0);
+  --color-base-200: oklch(18.9% 0 0);
+  --color-base-300: oklch(28.5% 0.006 286.033);
+  --color-base-content: oklch(89.8% 0.007 247.896);
+  --color-primary: oklch(69% 0.17 162.48);
+  --color-primary-content: oklch(96% 0.018 272.314);
+  --color-secondary: oklch(60% 0.118 184.704);
+  --color-secondary-content: oklch(94% 0.028 342.258);
+  --color-accent: oklch(68% 0.169 237.323);
+  --color-accent-content: oklch(92% 0.013 255.508);
+  --color-neutral: oklch(17% 0.002 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(70% 0.165 254.624);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(92% 0.12 95.746);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+body {
+  font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
